@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaqurries.css">
+</head>
+<body>
+    <!-- this is for the logo infront of the page -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            John Doe
+        </div>
+        
+        
+        <!-- this is for the nav bar on the top of the page-->
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experice">Experice</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            John Doe
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="ToggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About"onclick="ToggleMenu()">About</a></li>
+                <li><a href="#Experice"onclick="ToggleMenu()">Experice</a></li>
+                <li><a href="#Project"onclick="ToggleMenu()">Project</a></li>
+                <li><a href="#Contact"onclick="ToggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.png" alt="John Doe profile">
+        </div>
+    </section>
+   
+    <div class="section-text">
+        <p class="section-text-p1">
+            Hello,I'm
+        </p>
+        
+        <h1 class="tittle">
+            John Doe
+        </h1>
+        
+        <p class="section-text-p2">
+            Frontend Developer
+        </p>
+        <div class="btn-container">
+            <button class="btnbtncolor-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+            </button>
+            <button class="btnbtncolor-1" onclick="location.href='./#Contact'">
+               Contact Info
+                </button>
+        </div>
+        <div id="Soical-container">
+            <img src="./assets/linkedin.png" alt="My linkdin profile"
+            class="icon"onclick="location.href='http://linkedin.com'">
+            <img src="./assets/github.png" alt="My github profile"
+            class="icon"onclick="location.href='http://github.com'">
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
